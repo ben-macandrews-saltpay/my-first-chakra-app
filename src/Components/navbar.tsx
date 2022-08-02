@@ -7,6 +7,7 @@ import {
     ButtonGroup,
     Button
 } from '@chakra-ui/react'
+import theme from "../theme/theme"
 
 
 const Navbar = () => {

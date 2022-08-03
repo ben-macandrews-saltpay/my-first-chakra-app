@@ -25,7 +25,7 @@ const SideMenu = () => {
                 alignItems="flex-start"
                 bg='brand.pure.white'
                 height={"full"}
-                // position={"fixed"}
+                position={"fixed"}
                 borderRight={"1px solid"}
                 borderColor={"brand.neutral.400"}
             >

@@ -10,6 +10,8 @@ import Navbar from "../components/navbar";
 import ScSidemenu from '../components/scsidemenu';
 import theme from "../theme/theme"
 
+import sideMenuItems from "./mock-data";
+
 export const App = () => (
   <ChakraProvider theme={theme}>
     <VStack alignItems="left" bg='brand.pure.white' spacing="0px">
@@ -43,3 +45,5 @@ export const App = () => (
   </VStack>
   </ChakraProvider >
 )
+
+console.log(sideMenuItems[0].level1);

@@ -10,9 +10,9 @@ import Navbar from "../components/navbar";
 import ScSidemenu from '../components/scsidemenu';
 import theme from "../theme/theme"
 
-import sideMenuItems from "./mock-data";
-
 export const App = () => (
+  
+
   <ChakraProvider theme={theme}>
     <VStack alignItems="left" bg='brand.pure.white' spacing="0px">
       <Box p="12px" bg="brand.pure.white" boxShadow="md" zIndex="overlay">
@@ -26,24 +26,24 @@ export const App = () => (
 
         {/* CONTENT */}
         <Box minH='full' w='full' py='24px' px={['16px', '16px', '16px', '60px']} bg="white">
-          <SimpleGrid columns={{sm: 4, md: 6, lg: 12}} spacing={{md: 4, lg: 6}} h="full" p={15}>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-          <Box h='full' bg='brand.neutral.100'></Box>
-        </SimpleGrid>
-      </Box>
-    </Stack>
-  </VStack>
+          <SimpleGrid columns={{ sm: 4, md: 6, lg: 12 }} spacing={{ md: 4, lg: 6 }} h="full" p={15}>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+            <Box h='full' bg='brand.neutral.100'></Box>
+          </SimpleGrid>
+        </Box>
+      </Stack>
+    </VStack>
   </ChakraProvider >
 )
 
-console.log(sideMenuItems[0].level1);
+

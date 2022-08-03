@@ -13,9 +13,12 @@ import {
 } from "@chakra-ui/react";
 
 import ApplicationsIcon from "./icons/ApplicationsIcon";
-import theme from "../theme/theme"
+import theme from "../theme/theme";
+import sideMenuItems from "../../src/pages/mock-data"
+
 
 const SideMenu = () => {
+    const menuChildren = sideMenuItems.addAnAPI.children;
     return (
         
             <VStack
@@ -34,6 +37,7 @@ const SideMenu = () => {
                     position={"relative"}
                     top={"100px"}
                 >
+                    
                     <AccordionItem borderColor={"brand.pure.white"}>
                         <AccordionButton
                             justifyContent="center"
@@ -62,12 +66,13 @@ const SideMenu = () => {
                         </AccordionButton>
                         <VStack maxHeight={"200px"} overflow={"auto"} alignItems="left">
                             <AccordionPanel data-testid={"accordion-stack-applications"}>
-
+                            {menuChildren?.map(menuChildren => (
                                 <AccordionItem
                                     padding={"12px 16px"}
                                     borderStyle={"none"}
                                     position={"relative"}
                                     left={"50px"}
+                                    key={menuChildren}
                                 >
                                     <Link href={"#"}>
                                         <Text
@@ -78,11 +83,11 @@ const SideMenu = () => {
                                             _hover={{ color: "brand.neutral.700" }}
                                             _active={{ color: "brand.primary.500" }}
                                         >
-                                            {"Application 1"}
+                                            {menuChildren}
                                         </Text>
                                     </Link>
                                 </AccordionItem>
-
+                            ))}
                             </AccordionPanel>
                         </VStack>
                     </AccordionItem>

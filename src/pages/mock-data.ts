@@ -1,5 +1,3 @@
-import { isTemplateSpan } from "typescript";
-
 const sideMenuItems = {
 
     applications: {

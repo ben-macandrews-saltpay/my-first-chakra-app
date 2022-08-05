@@ -9,6 +9,7 @@ import {
 import Navbar from "../components/navbar";
 import ScSidemenu from '../components/scsidemenu';
 import theme from "../theme/theme"
+import ResizePanel from "../components/resizepanel"
 
 export const App = () => (
   
@@ -22,6 +23,9 @@ export const App = () => (
 
         {/* SIDE MENU */}
         {/* <Sidemenu /> */}
+        <ResizePanel direction="e">
+        <ScSidemenu />
+</ResizePanel>
         <ScSidemenu />
 
         {/* CONTENT */}

@@ -5,12 +5,15 @@ import {
   Stack,
   HStack,
   VStack,
-  SimpleGrid
+  Grid,
+  GridItem,
 } from "@chakra-ui/react"
 import Navbar from "../components/navbar";
 import ScSidemenu from '../components/scsidemenu';
-import theme from "../theme/theme"
-import ResizePanel from "../components/resizepanel"
+import theme from "../theme/theme";
+import ResizePanel from "../components/resizepanel";
+import "../global.css"
+import "@fontsource/open-sans";
 
 export const App = () => (
 
@@ -41,25 +44,18 @@ export const App = () => (
 
         {/* CONTENT */}
 
-        <Box minH='full' w='full' pt='72px' px={['16px', '16px', '16px', '32px']} bg="brand.neutral.50">
-          <SimpleGrid columns={{ sm: 4, md: 6, lg: 12 }} spacing={{ md: 4, lg: 6 }} minH="100vh" py={6}>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-            <Box h='full' bg='brand.neutral.100'></Box>
-          </SimpleGrid>
+        <Box minH='full' w='full' pt='80px' px={['16px', '16px', '16px', '32px']} bg="brand.neutral.50">
+          <Grid templateColumns={["repeat(4, 1fr)", "repeat(8, 1fr)", "repeat(12, 1fr)", "repeat(12, 1fr)"]} gap={[4, 4, 6, 6]} minH="100vh" py={6}>
+            <GridItem colStart={[1, 1, 1, 3]} colEnd={[5, 9, 13, 11]} h='full' bg='brand.neutral.300'>
+              <Box textStyle="heading-small-semibold">Heading</Box>
+            </GridItem>
+
+          </Grid>
         </Box>
 
       </Stack>
 
+      {/* columns = {{ sm: 4, md: 6, lg: 12 }} */}
 
       <HStack>
 

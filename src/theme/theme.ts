@@ -1,8 +1,65 @@
 import { extendTheme } from '@chakra-ui/react';
+import { TYPE_SCALES } from "./typography";
 // import { Colors } from "./colors"
 
 const theme = extendTheme(
     {
+        typography: {"heading-medium-semibold": {
+            fontStyle: "Normal",
+            fontSize: "32px",
+            fontWeight: 600,
+            lineHeight: "32px",
+          },
+          "heading-small-semibold": {
+            fontStyle: "Normal",
+            fontSize: "24px",
+            fontWeight: 600,
+            lineHeight: "44px",
+          },
+          "heading-small-regular": {
+            fontStyle: "Normal",
+            fontSize: "24px",
+            fontWeight: 400,
+            lineHeight: "32px",
+          },
+          "body-regular": {
+            fontStyle: "Normal",
+            fontSize: "16px",
+            fontWeight: 400,
+            lineHeight: "24px",
+          },
+          "body-semibold": {
+            fontStyle: "Normal",
+            fontSize: "16px",
+            fontWeight: 600,
+            lineHeight: "24px",
+          },
+          "body-extrabold": {
+            fontStyle: "Normal",
+            fontSize: "16px",
+            fontWeight: 600,
+            lineHeight: "24px",
+          },
+          "large-semibold": {
+            fontStyle: "Normal",
+            fontSize: "20px",
+            fontWeight: 600,
+            lineHeight: "28px",
+          },
+        
+          "small-regular": {
+            fontStyle: "Normal",
+            fontSize: "13px",
+            fontWeight: 400,
+            lineHeight: "16px",
+          },
+          "small-semibold": {
+            fontStyle: "Normal",
+            fontSize: "13px",
+            fontWeight: 600,
+            lineHeight: "16px",
+          },
+        },
         colors: {
             brand: {
                 neutral: {
@@ -16,13 +73,13 @@ const theme = extendTheme(
                     50: "#FCFCFC"
                 },
                 primary: {
-                    "500": "#7560E2",
+                    900: "#3A3071",
+                    700: "#5848A9",
+                    500: "#7560E2",
                     background: "#F2F0FF",
-                    "900": "#3A3071",
-                    "700": "#5848A9",
                 },
                 secondary: {
-                    "300": "#90DAE4",
+                    300: "#90DAE4",
                 },
                 pure: {
                     white: "#FFFFFF",

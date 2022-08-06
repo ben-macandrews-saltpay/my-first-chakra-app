@@ -1,0 +1,18 @@
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  p > svg{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: 5px;
+  }
+  
+  /* specific override to stoplight icons */
+  .sl-elements div > svg{
+    width: 15px;
+    height: 15px;
+  }

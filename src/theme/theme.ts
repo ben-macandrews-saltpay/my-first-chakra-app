@@ -13,6 +13,7 @@ const theme = extendTheme(
                     400: "#BDBDBD",
                     300: "#E0E0E0",
                     100: "#F5F5F5",
+                    50: "#FCFCFC"
                 },
                 primary: {
                     "500": "#7560E2",

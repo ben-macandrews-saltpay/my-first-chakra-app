@@ -41,8 +41,8 @@ export const App = () => (
 
         {/* CONTENT */}
 
-        <Box minH='full' w='full' pt='72px' px={['16px', '16px', '16px', '60px']} bg="white">
-          <SimpleGrid columns={{ sm: 4, md: 6, lg: 12 }} spacing={{ md: 4, lg: 6 }} minH="100vh" px={15} py={6}>
+        <Box minH='full' w='full' pt='72px' px={['16px', '16px', '16px', '32px']} bg="brand.neutral.50">
+          <SimpleGrid columns={{ sm: 4, md: 6, lg: 12 }} spacing={{ md: 4, lg: 6 }} minH="100vh" py={6}>
             <Box h='full' bg='brand.neutral.100'></Box>
             <Box h='full' bg='brand.neutral.100'></Box>
             <Box h='full' bg='brand.neutral.100'></Box>

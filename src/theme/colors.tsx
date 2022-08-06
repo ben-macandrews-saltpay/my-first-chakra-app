@@ -8,6 +8,7 @@ type ColorsType = {
         400: string;
         300: string;
         100: string;
+        50: string;
       };
       primary: {
         "500": string;
@@ -52,6 +53,7 @@ export const Colors: ColorsType = {
             400: "#BDBDBD",
             300: "#E0E0E0",
             100: "#F5F5F5",
+            50: "#000000",
         },
         primary: {
             "500": "#7560E2",

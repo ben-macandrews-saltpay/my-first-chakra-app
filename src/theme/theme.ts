@@ -4,7 +4,7 @@ import { TYPE_SCALES } from "./typography";
 
 const theme = extendTheme(
     {
-        typography: {"heading-medium-semibold": {
+        textStyles: {"heading-medium-semibold": {
             fontStyle: "Normal",
             fontSize: "32px",
             fontWeight: 600,

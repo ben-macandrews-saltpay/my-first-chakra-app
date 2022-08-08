@@ -1,9 +1,13 @@
 import { extendTheme } from '@chakra-ui/react';
 import { TYPE_SCALES } from "./typography";
+import Button from '../components/button-variants';
 // import { Colors } from "./colors"
 
 const theme = extendTheme(
     {
+        components: {
+            Button,
+          },        
         textStyles: {"heading-medium-semibold": {
             fontStyle: "Normal",
             fontSize: "32px",

@@ -52,6 +52,16 @@ const Button: ComponentStyleConfig = {
             
             borderColor: 'brand.primary.500',
             color: 'brand.primary.500',
+            _hover: {
+                bg: 'brand.primary.background',
+            },
+            _active: {
+                bg: 'brand.primary.background',
+            },
+            _disabled: {
+                bg: 'brand.neutral.100',
+                color: 'brand.neutral.500'
+            },
         },
 
         outline: {

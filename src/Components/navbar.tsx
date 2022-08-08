@@ -7,15 +7,15 @@ import {
     ButtonGroup,
     Button
 } from '@chakra-ui/react'
-import theme from "../theme/theme"
-
+import mainLogo from './logos/salt-connect-logo.png';
 
 const Navbar = () => {
     return (
         <Flex minWidth='max-content' h="48px" alignItems='center' gap='2'>
-            <Box p='2' textStyle="heading-small-semibold" color='brand.neutral.800'>
+            <img width='120px' src={mainLogo}/>
+            <Box p='2' textStyle="large-semibold" color='brand.neutral.800'>
                 {/* <Heading size='md'>SaltConnect Layout Project</Heading> */}
-                SaltConnect Layout Component
+                Layout Component
             </Box>
             <Spacer />
             <ButtonGroup gap='2'>

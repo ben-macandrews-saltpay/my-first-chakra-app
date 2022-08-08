@@ -27,7 +27,7 @@ export const App = () => (
 
     {/* NAV BAR */}
     <VStack alignItems="left" bg='brand.pure.white' spacing="0px">
-      <Box p="12px" bg="brand.pure.white" boxShadow="md" zIndex="overlay" position={"fixed"} minW="100vw">
+      <Box px="12px" bg="brand.pure.white" boxShadow="md" zIndex="overlay" position={"fixed"} minW="100vw">
         <Navbar />
       </Box>
 

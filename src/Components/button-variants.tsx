@@ -1,4 +1,4 @@
-import { background } from '@chakra-ui/react';
+import { background, color } from '@chakra-ui/react';
 import type { ComponentStyleConfig } from '@chakra-ui/theme';
 
 const Button: ComponentStyleConfig = {
@@ -57,10 +57,13 @@ const Button: ComponentStyleConfig = {
             },
             _active: {
                 bg: 'brand.primary.background',
+                borderColor: 'brand.primary.900',
+                color: 'brand.primary.900'
             },
             _disabled: {
                 bg: 'brand.neutral.100',
-                color: 'brand.neutral.500'
+                color: 'brand.neutral.500',
+                borderColor: 'brand.neutral.500'
             },
         },
 

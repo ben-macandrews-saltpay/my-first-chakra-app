@@ -39,7 +39,7 @@ export const App = () => (
           <Box
             minH={"100vh"}
             w='full'
-            pt='72px'
+            pt='48px'
             className="panel sidebar">
             <ScSidemenu />
           </Box>
@@ -49,7 +49,7 @@ export const App = () => (
 
         {/* CONTENT */}
 
-        <Box minH='full' w='full' pt='80px' px={['16px', '32px', '32px', '32px']} bg="brand.neutral.50">
+        <Box minH='full' w='full' pt='56px' px={['16px', '32px', '32px', '32px']} bg="brand.neutral.50">
           <Grid templateColumns={["repeat(4, 1fr)", "repeat(8, 1fr)", "repeat(12, 1fr)", "repeat(12, 1fr)"]} gap={[4, 4, 6, 6]} minH="100vh" py={6}>
             <GridItem colStart={[1, 1, 1, 3]} colEnd={[5, 9, 13, 11]} h='full'>
               {/* Header Section */}

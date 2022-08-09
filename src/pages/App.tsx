@@ -13,10 +13,10 @@ import {
   ButtonGroup
 } from "@chakra-ui/react"
 import Navbar from "../components/navbar";
-import ScSidemenu from '../components/sidemenu';
+import ScSidemenu from '../components//side-menu/sidemenu';
 
 import theme from "../theme/theme";
-import ResizePanel from "../components/resizepanel";
+import ResizePanel from "../components/side-menu/resizepanel";
 import "../global.css"
 import "@fontsource/open-sans";
 
@@ -84,6 +84,7 @@ export const App = () => (
 
         <Box minW="100px"></Box>
       </HStack>
+
 
 
     </VStack>

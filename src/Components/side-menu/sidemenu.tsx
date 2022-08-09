@@ -7,12 +7,14 @@ import {
     AccordionPanel,
     AccordionIcon,
     Link,
+    Spacer,
+    Flex
 } from "@chakra-ui/react";
 
-import ApplicationsIcon from "./icons/ApplicationsIcon";
-import APIsIcon from "./icons/APIsIcon";
-import theme from "../theme/theme";
-import sideMenuItems from "../pages/mock-data";
+import ApplicationsIcon from "../icons/ApplicationsIcon";
+import APIsIcon from "../icons/APIsIcon";
+import theme from "../../theme/theme";
+import sideMenuItems from "../../pages/mock-data";
 
 const accordionButtonStyle = {
     justifyContent: "left",
@@ -35,6 +37,7 @@ const SideMenu = () => {
             height={"full"}
             borderRight={"1px solid"}
             borderColor={"brand.neutral.400"}
+
         >
             <Accordion
                 allowToggle
@@ -51,26 +54,24 @@ const SideMenu = () => {
                 <AccordionItem
                     overflow={"hidden"}
                     mb={2}>
+
+                    {/* Applications Button */}
                     <AccordionButton
                         as="span"
                         style={accordionButtonStyle}
                         _expanded={{ bg: "brand.primary.background", color: "brand.primary.500" }}
                         _active={{ bg: "brand.primary.background", color: "brand.primary.500" }}
-                        _hover={{ bg: "brand.neutral.100", color: "brand.primary.700" }}
-                    >
-                        <ApplicationsIcon />
-                        <Text
-                            as={"span"}
-                            textStyle="body-semibold"
-                            color={"brand.neutral.700"}
-                            _active={{ bg: "brand.primary.background", color: "brand.primary.700" }}
-                            _selected={{ bg: "brand.primary.background", color: "brand.primary.700" }}
-                            marginLeft={"20px"}
-                        >
-                            <Link href={`/dashboard/applications`}>Applications</Link>
+                        _hover={{ bg: "brand.neutral.100", color: "brand.primary.700" }}>
+                        <Flex width='100%'>
+                            <ApplicationsIcon />
+                            <Link textStyle="body-semibold" ml={5} href={`/dashboard/applications`}>Applications</Link>
+                            <Spacer />
                             <AccordionIcon width={"24px"} height={"24px"} marginLeft={"20px"} />
-                        </Text>
+                        </Flex>
+                        {/* </Text> */}
                     </AccordionButton>
+
+                    {/* Applications Children */}
                     <VStack maxHeight={"200px"} overflow={"auto"} alignItems="left">
                         <AccordionPanel
                             data-testid={"accordion-stack-applications"}
@@ -106,7 +107,7 @@ const SideMenu = () => {
                     </VStack>
                 </AccordionItem>
 
-                 {/* My APIs */}
+                {/* My APIs */}
                 <AccordionItem
                     overflow={"hidden"}>
                     <AccordionButton
@@ -115,18 +116,12 @@ const SideMenu = () => {
                         _expanded={{ bg: "brand.primary.background", color: "brand.primary.500" }}
                         _active={{ bg: "brand.primary.background", color: "brand.primary.500" }}
                         _hover={{ bg: "brand.neutral.100", color: "brand.primary.700" }}>
-                        <APIsIcon />
-                        <Text
-                            as={"span"}
-                            textStyle="body-semibold"
-                            color={"brand.neutral.700"}
-                            _active={{ bg: "brand.primary.background", color: "brand.primary.700" }}
-                            _selected={{ bg: "brand.primary.background", color: "brand.primary.700" }}
-                            marginLeft={"20px"}
-                        >
-                            <Link href={`/dashboard/applications`}>My APIs</Link>
+                        <Flex width='100%'>
+                            <APIsIcon />
+                            <Link textStyle="body-semibold" ml={5} href={`/dashboard/applications`}>My APIs</Link>
+                            <Spacer />
                             <AccordionIcon width={"24px"} height={"24px"} marginLeft={"20px"} />
-                        </Text>
+                        </Flex>
                     </AccordionButton>
                     <VStack maxHeight={"200px"} overflow={"auto"} alignItems="left">
                         <AccordionPanel
@@ -162,7 +157,7 @@ const SideMenu = () => {
                     </VStack>
                 </AccordionItem>
 
-                 {/* Add an API */}
+                {/* Add an API */}
                 <AccordionItem
                     overflow={"hidden"}
                     mb={2}>
@@ -171,20 +166,13 @@ const SideMenu = () => {
                         style={accordionButtonStyle}
                         _expanded={{ bg: "brand.primary.background", color: "brand.primary.500" }}
                         _active={{ bg: "brand.primary.background", color: "brand.primary.500" }}
-                        _hover={{ bg: "brand.neutral.100", color: "brand.primary.700" }}
-                    >
-                        <ApplicationsIcon />
-                        <Text
-                            as={"span"}
-                            textStyle="body-semibold"
-                            color={"brand.neutral.700"}
-                            _active={{ bg: "brand.primary.background", color: "brand.primary.700" }}
-                            _selected={{ bg: "brand.primary.background", color: "brand.primary.700" }}
-                            marginLeft={"20px"}
-                        >
-                            <Link href={`/dashboard/applications`}>Add an API</Link>
+                        _hover={{ bg: "brand.neutral.100", color: "brand.primary.700" }}>
+                            <Flex width='100%'>
+                        <ApplicationsIcon />       
+                            <Link textStyle="body-semibold" ml={5} href={`/dashboard/applications`}>Add an API</Link>
+                            <Spacer />
                             <AccordionIcon width={"24px"} height={"24px"} marginLeft={"20px"} />
-                        </Text>
+                        </Flex>
                     </AccordionButton>
                     <VStack maxHeight={"200px"} overflow={"auto"} alignItems="left">
                         <AccordionPanel
